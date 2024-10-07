@@ -1531,3 +1531,13 @@ padding-right: 5%;
       width: 70% !important;
       background-color: #000;
     }
+
+
+
+    .aximo-accordion-header h3{
+      font-size: 19px;
+    }
+
+    .aximo-hero-shape img{
+      margin-left: 45%
+    }
