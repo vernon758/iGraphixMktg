@@ -179,6 +179,101 @@
   };
 </script>
 
+
+<!------Whatsapp-->
+
+<!-- Chat Button -->
+<button id="chat-button">
+  <img src="assets/images/logo/logoface.png" alt="Chat">
+</button>
+
+<!-- Chat Box -->
+<div id="chat-box">
+<!-- Close Button -->
+<button id="close-chat">&times;</button>
+
+<!-- Profile Section -->
+<div class="profile">
+  <div style="position:relative;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAAA3NCSVQICAjb4U/gAAAAX3pUWHRSYXcgcHJvZmlsZSB0eXBlIEFQUDEAAAiZ40pPzUstykxWKCjKT8vMSeVSAANjEy4TSxNLo0QDAwMLAwgwNDAwNgSSRkC2OVQo0QAFmBqYWZoZmxmaAzGIzwUASLYUyTrUQzIAAAM1SURBVFiF7ZdLSJRRFIDP/f/7X//xkc2oU75QfGOZ5oN2SVkWbYJAqBYtEiLETWDQKqI2LjOEFlEQFRVJYlGbRGsolCzBGlMrX5mPdF4+xhnv/2ox4zSY49ypIYs8u3vu4Xz33HP+c+6PyP1nsB7CrQt1A7wB/n/BVNOoqv1pMJWUPSI5ZYihS1IY4TgIVVbuFmQc3ZENAGetjuynHSRC8G4BgKZxCAVxEUCCRSwrHioAZMVtrk00UFWjskLdFDQtW8AqlSiVfiERwY9LFZXw3vONuClQqbk0ryIzNWY59CHb7JXugYYpKyECO5jnq06ssa1wSLXNlqclcgi19A1dHJmyV+0tSkyIwLzPRq8TD2YklxHh1ugU76dfW1DQ6URVFagMACArtmP79ToxkOWN7v7q/lHCxg5e1YTjiEgA83dKctegAsDJ4jxAiLJgQ2ggilqZlepbSap63tRd2vy8bXDM3+paTiooatjAHk/xUTqfpqHTfOnL9FsqVbzoGXPM+/T58bGghhfMIX9N77wTME8QAoG3OF0+PeZYr5DJDgOAolK/UOoKc2DRTd1SUZS4M9no08843YDQKi5W9ckkPGeetBQvM7ZtjXMcr5ycc+YZDf5W94YngC1o5uLCfN2bPn9FrBixgjpoddyecRCOKWJWMEGo3em+2tUbyMAly1mtXRDB2rxCmceYr/kwcsHUTX/6YPpnbJFNbSAphC3BwNK5POKZRQ8LMo909ALm67OSio0GEfPTTvfN4YnHllmIFE278ne/7GHs2MzFJStPSnIP5aYPGPWnX7079/ErfBr3bmlaQ35aTdl2zKHaz2ONljmWNDODFbU8IwUAcuL1bYfLvy0sjtjnlmTFoBNzjXphuZIPpGxpnHYAF7xdB5lOP7gcUu2z+9KTPMtoIqTERqfpNxmjI/nlvDpcS4WtXcA2JZirmuPqxy2XO98HMrC53PpHJiCYsDkMoaqJgM8MTVS0mMxTVn+9S5abzINxD9oBIPxV7ROqaSApAFCdEKsX8Ov5RZPDCQLPYT6kx1fILzWCEBBMAa7bFwAAEBAd4+3+HtiLh5XzKlT5u/8kNsAb4H8K/B2hnibIlXkjeQAAAABJRU5ErkJggg==" alt="Profile">
+    <span class="online-status"></span>
+  </div>
+  <div class="profile-info">
+    <h4>Support Agent</h4>
+    <span>Online</span>
+  </div>
+</div>
+
+<hr class="custom-hr">
+
+
+<br>
+<div class="message-time" id="message-time"></div>
+<br>
+
+<!-- Message Bubble -->
+<div class="message-bubble">
+  <p id="message-text"></p>
+</div>
+
+<!-- Chat button at the bottom -->
+<a id="chat-button-agent" href="https://wa.me/17587266532" target="_blank" style="text-decoration: none;">Start Chat</a>
+</div>
+
+<script>
+const chatButton = document.getElementById('chat-button');
+const chatBox = document.getElementById('chat-box');
+const closeButton = document.getElementById('close-chat');
+const messageText = document.getElementById('message-text');
+const messageTime = document.getElementById('message-time');
+
+// Toggle chat box display
+chatButton.addEventListener('click', () => {
+if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+  chatBox.style.display = 'flex';
+  displayMessage(); // Start displaying the message when the chat opens
+} else {
+  chatBox.style.display = 'none';
+}
+});
+
+// Close chat box when the close button is clicked
+closeButton.addEventListener('click', () => {
+chatBox.style.display = 'none';
+});
+
+// Close chat box when clicking outside of it
+document.addEventListener('click', (event) => {
+const isClickInside = chatBox.contains(event.target) || chatButton.contains(event.target);
+if (!isClickInside) {
+  chatBox.style.display = 'none';
+}
+});
+
+// Display current time in message bubble
+function displayCurrentTime() {
+const now = new Date();
+const time = now.getHours() + ':' + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes();
+messageTime.textContent = time;
+}
+displayCurrentTime();
+
+// Typing effect for text
+const message = "Hi!👋 How can I help you?";
+function displayMessage() {
+messageText.innerHTML = ''; // Clear previous message
+let index = 0;
+const typingInterval = setInterval(() => {
+  if (index < message.length) {
+    messageText.innerHTML += (message[index] === '\n' ? '<br>' : message[index]); // Replace new line with <br>
+    index++;
+  } else {
+    clearInterval(typingInterval);
+  }
+}, 100); // Speed of typing effect
+}
+</script>
+
 <div class="aximo-breadcrumb">
   <div class="container"><br><br>
     <h1 class="post__title">Terms & Conditions</h1>
@@ -247,10 +342,6 @@
 
 
 
-
-
-  <script src="https://static.elfsight.com/platform/platform.js" async></script>
-  <div class="elfsight-app-4f6206d5-c795-47d4-b706-a9effcf64606" data-elfsight-app-lazy></div>
 
 
 
