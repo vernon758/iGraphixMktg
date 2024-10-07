@@ -1541,3 +1541,8 @@ padding-right: 5%;
     .aximo-hero-shape img{
       margin-left: 45%
     }
+@media (min-width: 1400px) {
+    .aximo-hero-content h1{      
+      font-size: 99px;
+    }
+  }
