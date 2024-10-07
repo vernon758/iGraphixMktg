@@ -1,0 +1,1833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional graphic design, photography, and drone services. Specializing in creative branding, logo design, web development, and marketing materials. Elevate your business with custom visuals, stunning photography, and aerial drone shots crafted with passion and precision.">
+  <meta name="keywords" content="graphic design, photography, drone services, branding, logo design, web development, marketing materials, custom graphics, creative services, aerial photography, professional design, iGraphix Marketing & Co, igraphix marketing, igraphix, graphic designer near me, photography near me">    <meta name="author" content="Vernon Francis">
+  <title>iGraphix Marketing & Co.</title>
+
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!--- End favicon-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <!-- End google font  -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/custom-font.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/icomoon.css">
+
+
+  <!-- Code Editor  -->
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/app.min.css">
+
+
+</head>
+
+<body class="light">
+
+  
+
+  <div class="aximo-preloader-wrap">
+    <div class="aximo-preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+
+<!----------Popup-------->
+<style>
+  
+  .promotion {
+      background: var(--dark-bg2);
+      color: var(--white-smoke);
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+  }
+  .promotion::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 10px,
+          rgba(255,255,255,0.1) 10px,
+          rgba(255,255,255,0.1) 20px
+      );
+      animation: shine 20s linear infinite;
+  }
+  @keyframes shine {
+      0% {
+          transform: translateX(-50%) translateY(-50%) rotate(0deg);
+      }
+      100% {
+          transform: translateX(-50%) translateY(-50%) rotate(360deg);
+      }
+  }
+  .promotion-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 1;
+  }
+  .company-name {
+      font-size: 0.8em;
+      opacity: 0.7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+  }
+  .offer {
+      font-size: 2.5em;
+      font-weight: 600;
+      margin: 0 15px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+      0% {
+          transform: scale(1);
+      }
+      50% {
+          transform: scale(1.05);
+      }
+      100% {
+          transform: scale(1);
+      }
+  }
+  .description {
+      font-weight: 300;
+      margin: 0 15px;
+  }
+  .promotion button {
+      background-color: #ffffff;
+      border: none;
+      color: #000000;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      margin-left: 15px;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+  }
+
+  .close-btn {
+      position: absolute;
+      top: -10px;
+      right: -13px;
+      font-size: 24px;
+      cursor: pointer;
+      background: none !important;
+      border: none;
+      color: white !important;
+      transition: opacity 0.3s ease;
+  }
+  .close-btn:hover {
+      opacity: 1;
+  }
+  #overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+      backdrop-filter: blur(5px);
+  }
+  #popup {
+      position: fixed;
+      bottom: 10px;
+      left: 20px;
+      right: 20px;
+      z-index: 10000;
+      animation: slideUp 0.5s ease-out;
+  }
+  @keyframes slideUp {
+      from {
+          transform: translateY(100%);
+      }
+      to {
+          transform: translateY(0);
+      }
+  }
+  @media (max-width: 1350px) {
+    .offer {
+      font-size: 5.5em;
+  }
+    .description {
+      font-size: .9rem;
+  }
+      #popup {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 90%;
+          max-width: 400px;
+          animation: scaleIn 0.5s ease-out;
+      }
+      @keyframes scaleIn {
+          from {
+              transform: translate(-50%, -50%) scale(0.8);
+              opacity: 0;
+          }
+          to {
+              transform: translate(-50%, -50%) scale(1);
+              opacity: 1;
+          }
+      }
+      #overlay {
+          display: block;
+      }
+      .promotion-content {
+          flex-direction: column;
+          text-align: center;
+      }
+      .promotion-content > * {
+          margin: 10px 0;
+      }
+      .offer {
+          font-size: 2em;
+      }
+  }
+</style>
+
+<div id="overlay"></div>
+<div id="popup">
+    <div class="promotion">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+        <div class="promotion-content">
+            <span class="company-name">iGraphix Marketing & Co.</span>
+            <span class="offer">GET 10% OFF</span>
+            <span class="description">our services when you  use our website to request a quote today!</span>
+            <button onclick="window.location.href='get-quote.html'">GET A QUOTE</button>        </div>
+    </div>
+</div>
+
+<script>
+  // Close the popup after 3 seconds
+  setTimeout(closePopup, 5000);
+
+  function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.getElementById('overlay').style.display = 'none';
+  }
+</script>
+
+  <header class="site-header aximo-header-section aximo-header3 dark-bg2" id="sticky-menu">    
+    <div class="nav-container">
+      <nav class="navbar site-navbar">
+        <!-- Brand Logo-->
+        <div class="brand-logo">
+          <a href="index.html">
+            <img src="assets/images/logo/logo2.png" alt="" class="light-version-logo">
+          
+          </a>
+        </div>
+  
+        <div class="menu-block-wrapper">
+          <div class="menu-overlay"></div>
+          <nav class="menu-block" id="append-menu-header">
+            
+            <div class="mobile-menu-head">
+              <div class="go-back">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-head">
+                <img src="assets/images/logo/logo.png" alt="Logo" class="mobile-menu-logo">
+                <div class="mobile-menu-close">&times;</div>
+              </div>            </div>
+            <ul class="site-menu-main">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link-item">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about-us.html" class="nav-link-item">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="portfolio.html" class="nav-link-item">Portfolio</a>
+              </li> 
+              <li class="nav-item nav-item-has-children">
+                <a href="our-services.html" class="nav-link-item">
+                  Our Services<i class="fas fa-angle-down"></i>
+                </a>
+                <ul class="sub-menu">
+                  <li class="sub-menu--item">
+                    <a href="get-quote.html">
+                      <span class="menu-item-text">Get a Quote</span>
+                    </a>
+                  </li>
+                  <li class="sub-menu--item">
+                    <a href="social-media-management.html">
+                      <span class="menu-item-text">SM Management</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a href="contact-us.html" class="nav-link-item">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+
+       
+
+        <!-- mobile menu trigger -->
+        <div class="mobile-menu-trigger light">
+          <span></span>
+        </div>
+        <!--/.Mobile Menu Hamburger Ends-->
+   
+        <div class="header-btn header-btn-l1 ms-auto d-xs-inline-flex">
+          <div class="aximo-header-wrap">
+            <div class="aximo-social-icon header-social">
+              <ul>
+               
+                <li>
+                  <a href="https://facebook.com/igraphixmarketingco/" target="_blank">
+                    <i class="icon-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/igraphixmktg.co/" target="_blank">
+                    <i class="icon-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/vernon-francis/" target="_blank">
+                    <i class="icon-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+             <div class="header-btn header-btn-l1 ms-auto d-xs-inline-flex">
+              <a class="aximo-default-btn pill aximo-header-btn" href="get-quote.html">
+                Get A Quote
+              </a>
+              <div id="get-started-bubble" class="bubble">
+                Get Started
+              </div>
+            </div>
+
+            
+        
+      </nav>
+    </div>
+
+
+
+  <!------Whatsapp-->
+  
+<!-- Chat Button -->
+
+
+<button id="chat-button">
+  <img src="assets/images/logo/logoface.png" alt="Chat">
+</button>
+<!-- Chat Box -->
+<div id="chat-box">
+  <!-- Close Button -->
+  <button id="close-chat">&times;</button>
+
+  <!-- Profile Section -->
+  <div class="profile">
+    <div style="position:relative;">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAAA3NCSVQICAjb4U/gAAAAX3pUWHRSYXcgcHJvZmlsZSB0eXBlIEFQUDEAAAiZ40pPzUstykxWKCjKT8vMSeVSAANjEy4TSxNLo0QDAwMLAwgwNDAwNgSSRkC2OVQo0QAFmBqYWZoZmxmaAzGIzwUASLYUyTrUQzIAAAM1SURBVFiF7ZdLSJRRFIDP/f/7X//xkc2oU75QfGOZ5oN2SVkWbYJAqBYtEiLETWDQKqI2LjOEFlEQFRVJYlGbRGsolCzBGlMrX5mPdF4+xhnv/2ox4zSY49ypIYs8u3vu4Xz33HP+c+6PyP1nsB7CrQt1A7wB/n/BVNOoqv1pMJWUPSI5ZYihS1IY4TgIVVbuFmQc3ZENAGetjuynHSRC8G4BgKZxCAVxEUCCRSwrHioAZMVtrk00UFWjskLdFDQtW8AqlSiVfiERwY9LFZXw3vONuClQqbk0ryIzNWY59CHb7JXugYYpKyECO5jnq06ssa1wSLXNlqclcgi19A1dHJmyV+0tSkyIwLzPRq8TD2YklxHh1ugU76dfW1DQ6URVFagMACArtmP79ToxkOWN7v7q/lHCxg5e1YTjiEgA83dKctegAsDJ4jxAiLJgQ2ggilqZlepbSap63tRd2vy8bXDM3+paTiooatjAHk/xUTqfpqHTfOnL9FsqVbzoGXPM+/T58bGghhfMIX9N77wTME8QAoG3OF0+PeZYr5DJDgOAolK/UOoKc2DRTd1SUZS4M9no08843YDQKi5W9ckkPGeetBQvM7ZtjXMcr5ycc+YZDf5W94YngC1o5uLCfN2bPn9FrBixgjpoddyecRCOKWJWMEGo3em+2tUbyMAly1mtXRDB2rxCmceYr/kwcsHUTX/6YPpnbJFNbSAphC3BwNK5POKZRQ8LMo909ALm67OSio0GEfPTTvfN4YnHllmIFE278ne/7GHs2MzFJStPSnIP5aYPGPWnX7079/ErfBr3bmlaQ35aTdl2zKHaz2ONljmWNDODFbU8IwUAcuL1bYfLvy0sjtjnlmTFoBNzjXphuZIPpGxpnHYAF7xdB5lOP7gcUu2z+9KTPMtoIqTERqfpNxmjI/nlvDpcS4WtXcA2JZirmuPqxy2XO98HMrC53PpHJiCYsDkMoaqJgM8MTVS0mMxTVn+9S5abzINxD9oBIPxV7ROqaSApAFCdEKsX8Ov5RZPDCQLPYT6kx1fILzWCEBBMAa7bFwAAEBAd4+3+HtiLh5XzKlT5u/8kNsAb4H8K/B2hnibIlXkjeQAAAABJRU5ErkJggg==" alt="Profile">
+      <span class="online-status"></span>
+    </div>
+    <div class="profile-info">
+      <h4>Support Agent</h4>
+      <span>Online</span>
+    </div>
+  </div>
+
+  <hr class="custom-hr">
+
+
+  <br>
+  <div class="message-time" id="message-time"></div>
+  <br>
+
+  <!-- Message Bubble -->
+  <div class="message-bubble">
+    <p id="message-text"></p>
+  </div>
+
+  <!-- Chat button at the bottom -->
+  <a id="chat-button-agent" href="https://wa.me/17587266532" target="_blank" style="text-decoration: none;">Start Chat</a>
+</div>
+
+<script>
+ const chatButton = document.getElementById('chat-button');
+const chatBox = document.getElementById('chat-box');
+const closeButton = document.getElementById('close-chat');
+const messageText = document.getElementById('message-text');
+const messageTime = document.getElementById('message-time');
+
+// Toggle chat box display
+chatButton.addEventListener('click', () => {
+  if (chatBox.style.display === 'none' || chatBox.style.display === '') {
+    chatBox.style.display = 'flex';
+    displayMessage(); // Start displaying the message when the chat opens
+  } else {
+    chatBox.style.display = 'none';
+  }
+});
+
+// Close chat box when the close button is clicked
+closeButton.addEventListener('click', () => {
+  chatBox.style.display = 'none';
+});
+
+// Close chat box when clicking outside of it
+document.addEventListener('click', (event) => {
+  const isClickInside = chatBox.contains(event.target) || chatButton.contains(event.target);
+  if (!isClickInside) {
+    chatBox.style.display = 'none';
+  }
+});
+
+// Display current time in message bubble
+function displayCurrentTime() {
+  const now = new Date();
+  const time = now.getHours() + ':' + (now.getMinutes() < 10 ? '0' : '') + now.getMinutes();
+  messageTime.textContent = time;
+}
+displayCurrentTime();
+
+// Typing effect for text
+const message = "Hi!👋 How can I help you?";
+function displayMessage() {
+  messageText.innerHTML = ''; // Clear previous message
+  let index = 0;
+  const typingInterval = setInterval(() => {
+    if (index < message.length) {
+      messageText.innerHTML += (message[index] === '\n' ? '<br>' : message[index]); // Replace new line with <br>
+      index++;
+    } else {
+      clearInterval(typingInterval);
+    }
+  }, 100); // Speed of typing effect
+}
+  </script>
+
+
+    <style>
+
+      /* Scroll progress bar container */
+      #progressContainer {
+          position: fixed;
+          right: 0;
+          top: 0;
+          width: 5px;
+          height: 100%;
+          background-color: #FDFDE1;
+          z-index: 9999;
+      }
+
+      /* Progress bar */
+      #progressBar {
+          width: 100%;
+          height: 0;
+          background-color: #06a9bb;
+      }
+
+      /* Sample content */
+      .content {
+          padding: 20px;
+          max-width: 800px;
+          margin: auto;
+      }
+  </style>
+  </header>
+  
+ <!-- Scroll progress bar -->
+ <div id="progressContainer">
+  <div id="progressBar"></div>
+</div>
+<script>
+  // Update the progress bar as the user scrolls
+  window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.height = scrolled + "%";
+  };
+</script>
+<br>
+  <div class="aximo-hero-section light-bg8">
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="aximo-hero-content">
+            <h1>
+              <span class="aximo-title-animation">
+                A creative
+                <img src="assets/images/v1/star.png" alt="">
+              </span>
+              design studio
+            </h1>
+            <p>At iGraphix Marketing & Co., we specialize in delivering innovative and forward-thinking design solutions tailored to today’s dynamic market. From graphic design to front-end web development, photography, and video production, our goal is to help your brand make a lasting impact and stand out in an ever-evolving digital landscape.</p>
+            
+            <a class="aximo-call-btn" href="get-quote.html">Request A Quote Today<i class="ri-double-quotes-r"></i></a>
+            <div class="aximo-hero-shape">
+              <img src="assets/images/v1/shape1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="aximo-hero-thumb wow fadeInRight" data-wow-delay="0s">
+            <img src="assets/images/v1/10.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+
+
+  <div class="aximo-counter-section dark-bg2">
+    <div id="aximo-counter"></div>
+    <div class="container">
+      
+      <div class="aximo-counter-wrap5">
+        <div class="aximo-counter-data5 wow fadeInUpX" data-wow-delay="0.1s">
+          <h2><span data-percentage="100" class="aximo-counter"></span>+</h2>
+          <p>Projects Completed</p>
+        </div>
+        <div class="aximo-counter-data5 wow fadeInUpX" data-wow-delay="0.2s">
+          <h2><span data-percentage="100" class="aximo-counter"></span>+</h2>
+          <p>Satisfied Clients</p>
+        </div>
+        <div class="aximo-counter-data5 wow fadeInUpX" data-wow-delay="0.3s">
+         <center><h2><span data-percentage="05" class="aximo-counter"></span></h2></center> 
+          <p>Team Members</p>
+        </div>
+        <div class="aximo-counter-data5 wow fadeInUpX" data-wow-delay="0.4s">
+          <h2><span data-percentage="2019" class="aximo-counter"></span></h2>
+          <p>Since We Started</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+
+  <div class="section aximo-section-padding3 position-relative">
+    <div class="container">
+      <div class="aximo-section-titl arimo-font">
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-end justify-content-end">
+          
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4">
+          <div class="aximo-iconbox-wrap wow fadeInUpX" data-wow-delay="0s">
+            <div class="aximo-iconbox-icon4">
+              <i class="ri-pencil-ruler-2-line"></i>
+            </div>
+            <div class="aximo-iconbox-data4">
+              <h3>Graphic Design</h3>
+              <p>Creating visual elements such as logos, branding materials, page layout techniques, brochures, & other marketing collateral.</p>
+              <a class="aximo-icon" href="coming-soon.html">
+                <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 1.25L24.25 10M24.25 10L15.5 18.75M24.25 10L1.75 10" stroke="#191931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="aximo-iconbox-wrap wow fadeInUpX" data-wow-delay="0.1s">
+            <div class="aximo-iconbox-icon4">
+              <i class="service-icon ri-code-s-slash-line"></i>
+                        </div>
+            <div class="aximo-iconbox-data4">
+              <h3>Web Design</h3>
+              <p>Designing and developing websites to ensure they are visually look and appealing, user-friendly, and functional your website.</p>
+              <a class="aximo-icon" href="coming-soon.html">
+                <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 1.25L24.25 10M24.25 10L15.5 18.75M24.25 10L1.75 10" stroke="#191931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="aximo-iconbox-wrap wow fadeInUpX" data-wow-delay="0.2s">
+            <div class="aximo-iconbox-icon4">
+              <i class="service-icon ri-camera-line"></i>
+                        </div>
+            <div class="aximo-iconbox-data4">
+              <h3>Photography</h3>
+              <p>Capturing high-quality images for various purposes including product photography, corporate headshots, and event coverage.</p>
+              <a class="aximo-icon" href="coming-soon.html">
+                <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 1.25L24.25 10M24.25 10L15.5 18.75M24.25 10L1.75 10" stroke="#191931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="aximo-iconbox-wrap wow fadeInUpX" data-wow-delay="0.3s">
+            <div class="aximo-iconbox-icon4">
+              <i class="service-icon ri-video-line"></i>
+                        </div>
+            <div class="aximo-iconbox-data4">
+              <h3>Video Shoot</h3>
+              <p>Professional video production services for commercials, corporate videos, interviews, and promotional content.</p>
+              <a class="aximo-icon" href="coming-soon.html">
+                <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 1.25L24.25 10M24.25 10L15.5 18.75M24.25 10L1.75 10" stroke="#191931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="aximo-iconbox-wrap wow fadeInUpX" data-wow-delay="0.4s">
+            <div class="aximo-iconbox-icon4">
+              <i class="service-icon ri-crosshair-2-line"></i>
+                        </div>
+            <div class="aximo-iconbox-data4">
+              <h3>Drone Services</h3>
+              <p>Aerial photography and video services for unique perspectives in real estate, events, and landscape showcases.</p>
+              <a class="aximo-icon" href="coming-soon.html">
+                <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 1.25L24.25 10M24.25 10L15.5 18.75M24.25 10L1.75 10" stroke="#191931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-6">
+          <div class="aximo-iconbox-wrap wow fadeInUpX" data-wow-delay="0.5s">
+            <div class="aximo-iconbox-icon4">
+              <i class="ri-drag-move-fill"></i>
+                        </div>
+            <div class="aximo-iconbox-data4">
+              <h3>Motion Design</h3>
+              <p>Creating dynamic animated videos and motion graphics for engaging storytelling and visual explanations.</p>
+              <a class="aximo-icon" href="coming-soon.html">
+                <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.5 1.25L24.25 10M24.25 10L15.5 18.75M24.25 10L1.75 10" stroke="#191931" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+
+
+
+
+
+
+
+
+  <div class="section dark-bg2 aximo-section-padding">
+    <div class="container">
+      <div class="aximo-section-title center light">
+        <h2>
+          Have a wide range of creative projects
+          <span class="aximo-title-animation">
+            
+            <span class="aximo-title-icon">
+              <img src="assets/images/v1/star2.png" alt="">
+            </span>
+          </span>
+        </h2>
+      </div>
+    </div>
+    <div class="swiper aximo-project-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="aximo-project-thumb">
+            <img src="assets/images/v1/project1.jpeg" alt="">
+            <div class="aximo-project-wrap">
+              <div class="aximo-project-data">
+                <a href="single-portfolio.html">
+                  <h3>Graphic Design</h3>
+                </a>
+                <p>Crafting stunning visuals for your brand.</p>
+              </div>
+              <a class="aximo-project-icon" href="single-portfolio.html">
+                <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-project-thumb">
+            <img src="assets/images/v1/project2.jpeg" alt="">
+            <div class="aximo-project-wrap">
+              <div class="aximo-project-data">
+                <a href="single-portfolio.html">
+                  <h3>Web Design</h3>
+                </a>
+                <p>Building responsive and engaging websites.</p>
+              </div>
+              <a class="aximo-project-icon" href="single-portfolio.html">
+                <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-project-thumb">
+            <img src="assets/images/v1/project3.png" alt="">
+            <div class="aximo-project-wrap">
+              <div class="aximo-project-data">
+                <a href="single-portfolio.html">
+                  <h3>Photography</h3>
+                </a>
+                <p>Capturing moments that matter.</p>
+              </div>
+              <a class="aximo-project-icon" href="single-portfolio.html">
+                <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-project-thumb">
+            <img src="assets/images/v1/project4.png" alt="">
+            <div class="aximo-project-wrap">
+              <div class="aximo-project-data">
+                <a href="single-portfolio.html">
+                  <h3>Video Shoot</h3>
+                </a>
+                <p>Creating cinematic experiences.</p>
+              </div>
+              <a class="aximo-project-icon" href="single-portfolio.html">
+                <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-project-thumb">
+            <img src="assets/images/v1/project5.jpg" alt="">
+            <div class="aximo-project-wrap">
+              <div class="aximo-project-data">
+                <a href="single-portfolio.html">
+                  <h3>Drone Service</h3>
+                </a>
+                <p>Elevating your perspective.</p>
+              </div>
+              <a class="aximo-project-icon" href="single-portfolio.html">
+                <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-project-thumb">
+            <img src="assets/images/v1/project6.jpg" alt="">
+            <div class="aximo-project-wrap">
+              <div class="aximo-project-data">
+                <a href="single-portfolio.html">
+                  <h3>Motion Design</h3>
+                </a>
+                <p>Turning raw posters into compelling stories.</p>
+              </div>
+              <a class="aximo-project-icon" href="single-portfolio.html">
+                <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.9795 2C19.9795 2 20.5 8 25.9795 11.2C28.4887 12.6653 31.9795 14 31.9795 14M31.9795 14H2M31.9795 14C31.9795 14 28.5339 15.415 25.9795 16.8C19.9795 20.0533 19.9795 26 19.9795 26" stroke="#FDFDE1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- End section -->
+
+
+
+  <div class="section">
+    <div class="container">
+      <div class="aximo-faq-wrap">
+        <div class="row">
+          <div class="col-lg-7 d-flex align-items-center">
+            <div class="aximo-default-content">
+              <h2>
+                <span class="aximo-title-animation">
+                  Our high-quality
+                  <span class="aximo-title-icon">
+                    <img src="assets/images/v1/star2.png" alt="">
+                  </span>
+                </span>
+                working processes
+              </h2>
+              <p>We focus at every stage on effective communication and collaboration between the client and ensuring that the final design meets the client's objectives and expectations.</p>
+              <p>It is important to note that these are simplified steps, and the actual work process may vary depending on the complexity of the project.</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="aximo-accordion-wrap wow fadeInUpX" data-wow-delay="0s" id="aximo-accordion">
+             
+              <div class="aximo-accordion-item open">
+                <div class="aximo-accordion-header">
+                  <h3>01/ Request a quote</h3>
+                </div>
+                <div class="aximo-accordion-body">
+                  <p>Start by filling out our online form with details about your project, let us know what you need.</p>
+                </div>
+              </div>
+
+              <div class="aximo-accordion-item">
+                <div class="aximo-accordion-header">
+                  <h3>02/ Receive an invoice</h3>
+                </div>
+                <div class="aximo-accordion-body">
+                  <p>A detailed email will be sent outlining project delivery timeline, pricing, and additional details.</p>
+                </div>
+              </div>
+
+              <div class="aximo-accordion-item">
+                <div class="aximo-accordion-header">
+                  <h3>03/ Down Payment</h3>
+                </div>
+                <div class="aximo-accordion-body">
+                  <p>A 50% down payment (or full payment) is required to start work on a project.</p>
+                </div>
+              </div>
+
+              <div class="aximo-accordion-item">
+                <div class="aximo-accordion-header">
+                  <h3>04/ Final Delivery</h3>
+                </div>
+                <div class="aximo-accordion-body">
+                  <p>Final product presentation, the remaining 50% of the payment is due and file delivery upon approval.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+
+  <div class="aximo-auto-slider-section">
+    <div class="swiper aximo-auto-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End section -->
+
+  
+      <style>
+          .why-choose-us-container {
+              margin: 50px auto;
+              padding: 20px;
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              border-radius: 20px;
+              overflow: hidden;
+          }
+  
+          .left-side {
+              flex: 1;
+              padding: 20px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              color: #06a9bb;
+              border-radius: 15px;
+              margin-right: 20px;
+              min-height: 300px;
+          }
+  
+  
+          .left-side p {
+              font-size: 1.1em;
+              text-align: center;
+              max-width: 80%;
+              color: #555;
+          }
+  
+          .reasons-container {
+              flex: 2;
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 20px;
+              padding: 20px;
+          }
+  
+          .reason {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .reason:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+  
+          .icon {
+              font-size: 2em;
+              color: #06a9bb;
+              margin-bottom: 15px;
+              transition: all 0.3s ease;
+          }
+  
+          .reason:hover .icon {
+              transform: scale(1.1) rotate(10deg);
+              color: #00a0b2;
+          }
+  
+          .reason h3 {
+              font-size: 1.2em;
+              margin-bottom: 10px;
+              color: #000000;
+          }
+  
+          .reason p {
+              font-size: 0.9em;
+              color: #555;
+          }
+  
+          @media (max-width: 1024px) {
+              .why-choose-us-container {
+                  flex-direction: column;
+              }
+  
+              .left-side {
+                  width: 100%;
+                  margin-right: 0;
+                  margin-bottom: 20px;
+                  min-height: auto;
+              }
+  
+              .reasons-container {
+                  width: 100%;
+              }
+          }
+  
+          @media (max-width: 768px) {
+              .reasons-container {
+                  grid-template-columns: 1fr;
+              }
+          }
+  
+          @keyframes fadeInUp {
+              from {
+                  opacity: 0;
+                  transform: translateY(20px);
+              }
+              to {
+                  opacity: 1;
+                  transform: translateY(0);
+              }
+          }
+  
+          .reason {
+              animation: fadeInUp 0.5s ease-out forwards;
+              opacity: 0;
+          }
+  
+          .reason:nth-child(1) { animation-delay: 0.1s; }
+          .reason:nth-child(2) { animation-delay: 0.2s; }
+          .reason:nth-child(3) { animation-delay: 0.3s; }
+          .reason:nth-child(4) { animation-delay: 0.4s; }
+          .reason:nth-child(5) { animation-delay: 0.5s; }
+          .reason:nth-child(6) { animation-delay: 0.6s; }
+      </style>
+      <div class="why-choose-us-container">
+          <div class="left-side">
+              <h2 style="text-align: center;">Why Choose Us</h2>
+              <p>We're not just another company. We're your partners in success, committed to delivering exceptional results that propel your business forward.</p>
+          </div>
+          <div class="reasons-container">
+            <div class="reason">
+                <div class="icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Innovative Designs</h3>
+                <p>We push boundaries with designs that set new industry standards.</p>
+            </div>
+            <div class="reason">
+                <div class="icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>Skilled Expertise</h3>
+                <p>Our experienced team ensures every project is executed with precision and creativity.</p>
+            </div>
+            <div class="reason">
+                <div class="icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Goal-Oriented Results</h3>
+                <p>We don’t just meet your goals; we exceed them, driving measurable success.</p>
+            </div>
+            <div class="reason">
+                <div class="icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Reliable Service</h3>
+                <p>Count on us for consistent quality and dependable delivery every time.</p>
+            </div>
+            <div class="reason">
+                <div class="icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Cost-Effective Solutions</h3>
+                <p>We offer high-quality services at competitive prices to fit your budget.</p>
+            </div>
+            <div class="reason">
+                <div class="icon">
+                    <i class="fas fa-puzzle-piece"></i>
+                </div>
+                <h3>Personalized Approach</h3>
+                <p>Every solution is custom-tailored to meet your specific business needs.</p>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="aximo-brandlogo-section">
+        <div class="aximo-brandlogo-title">
+          <p>We’ve worked with over 50+ businesses around the world</p>
+        </div>
+        <div class="swiper aximo-auto-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_1.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_3.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_4.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_5.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_1.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_3.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_4.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_5.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_1.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_5.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_3.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_4.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_5.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_1.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_3.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_4.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="aximo-brandlogo-item">
+                <img src="assets/images/v2/b_5.png" alt="">
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+      <!-- end section -->
+    
+
+
+
+  <div class="section aximo-section-padding3">
+    <div class="container">
+      <div class="aximo-section-title center">
+        <h2>
+          Clients are always
+          <span class="aximo-title-animation">
+            satisfied with us
+            <span class="aximo-title-icon">
+              <img src="assets/images/v1/star2.png" alt="">
+            </span>
+          </span>
+        </h2>
+      </div>
+      <style>
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+    
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+    
+        .carousel-card {
+            min-width: calc(100% / 2); /* Show 3 cards at a time */
+            padding: 10px;
+        }
+    
+        .card {
+            position: relative; /* Make the card the reference for absolute positioning */
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 350px; /* Fixed height for all cards */
+            text-align: center;
+        }
+    
+        .card img.logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px; /* Adjust size as needed */
+            height: auto;
+        }
+    
+        .card h5 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    
+        .card p {
+            flex-grow: 1; /* Ensures text takes up space */
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+    
+        .star-rating {
+            color: #ffcc00;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+    
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+    
+        .control {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: background-color 0.3s;
+        }
+    
+        .control:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    
+        .control-left {
+            left: 0;
+        }
+    
+        .control-right {
+            right: 0;
+        }
+    
+        @media (max-width: 768px) {
+            .carousel-card {
+                min-width: calc(100% / 1); /* Show 2 cards at a time */
+            }
+        }
+    </style>
+    
+    <div class="carousel">
+        <div class="carousel-track">
+            <div class="carousel-card">
+                <div class="card">
+                  <br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>Khadisha Fergus</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>"I highly recommend iGraphix to anyone in need of logo design and other creative services. They did an exceptional job on my price list, and I couldn't be more satisfied with the results."</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>Kisinger Francis</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>"Logo design is fantastic, really captures what I wanted!"</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>nevaeh styles758</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>(No Comment)</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>rich nigga gaming</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>(No Comment)</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>Antonia Antonia</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>(No Comment)</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>Taye Jules</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>(No Comment)</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Carousel Controls -->
+        <div class="carousel-controls">
+            <button class="control control-left" onclick="moveLeft()">&#10094;</button>
+            <button class="control control-right" onclick="moveRight()">&#10095;</button>
+        </div>
+    </div>
+
+  </section></div></div>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const cards = document.querySelectorAll('.carousel-card');
+        const cardWidth = cards[0].offsetWidth;
+        let currentIndex = 0;
+
+        function moveLeft() {
+            if (currentIndex === 0) {
+                currentIndex = cards.length - 3;
+            } else {
+                currentIndex--;
+            }
+            updateCarousel();
+        }
+
+        function moveRight() {
+            if (currentIndex >= cards.length - 3) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const newPosition = -currentIndex * cardWidth;
+            track.style.transform = `translateX(${newPosition}px)`;
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            moveRight();
+        }, 3000);
+    </script>
+
+
+  <!------ instagram section--------->
+
+
+  <style>
+
+    .social-media-section {
+        padding: 50px;
+        background-image: url('/assets/images/v1/backgroundig.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    @media (max-width: 1024px) {
+
+        .social-media-section {
+            padding: 30px;
+        }
+
+    }
+
+    @media (max-width: 1024px) {
+
+        .social-media-section {
+            text-align: center;
+            padding: 20px;
+        }
+      
+    }
+
+    @media (max-width: 480px) {
+        .social-media-section {
+            margin-top: 50px;
+        }
+    }
+</style>
+
+<section class="social-media-section">
+  <div class="aximo-section-title center">
+    <h2 style="color: #f9f9f9;">
+      Follows on
+      <span class="aximo-title-animation" >
+        IG for the latest
+        <span class="aximo-title-icon">
+          <img src="assets/images/v1/star2.png" alt="">
+        </span>
+      </span>
+    </h2>
+  </div>
+  <div>
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
+  <div class="elfsight-app-d88a3da9-b263-4f21-953d-d121f4fb3e21" data-elfsight-app-lazy></div>
+</div> 
+</section>
+<br>
+
+<style>
+
+  .sc-container {
+   max-width: 1300px;
+   margin: 0 auto;
+   padding: 100px;
+  }
+  .sc-card {
+   background-color: #20B2AA;
+   border-radius: 20px;
+   overflow: hidden;
+   position: relative;
+  }
+  .sc-card::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: url('/assets/images/v1/officebkg.png') center/cover;
+   opacity: 0.27 soft-light;
+   border-radius: 20px;
+  }
+  .sc-card-content {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   padding: 30px;
+   color: white;
+  }
+  .sc-card-text {
+   order: 1;
+   z-index: 1;
+  }
+  .sc-card-image {
+   padding-right: 20%;
+   order: 2;
+   margin-left: -0%;
+   margin-bottom: 0;
+   position: relative;
+   overflow: visible;
+   margin-top: 20px;
+   text-align: center;
+  }
+  .sc-heading {
+   background: radial-gradient(circle,
+     #f5e16d 20%,
+     #fff5d9 80%
+   );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   color: transparent;
+   font-size: 28px;
+   font-weight: 900;
+   margin-bottom: 15px;
+   line-height: 1.2;
+   white-space: nowrap;
+  }
+  .sc-heading span {
+   display: block;
+  }
+  .sc-paragraph {
+   font-weight: 100;
+   font-size: 10px;
+   line-height: 15px;
+   margin-bottom: 20px;
+  }
+  .sc-btn {
+   font-size: 20px;
+   background-color: black;
+   color: white;
+   border: none;
+   padding: 10px 30px;
+   border-radius: 25px;
+   font-weight: bold;
+   cursor: pointer;
+  }
+  .sc-image {
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+  }
+  @media (min-width: 700px) {
+   .sc-card {
+     overflow: visible;
+   }
+   .sc-card-content {
+     flex-direction: row;
+     align-items: flex-end;
+     padding-bottom: 0;
+   }
+   .sc-card-text {
+     order: 2;
+     flex: 1;
+     padding-left: 30px;
+     padding-bottom: 30px;
+   }
+   .sc-card-image {
+     order: 1;
+     flex: 1;
+     margin-top: 0;
+     position: relative;
+     overflow: visible;
+   }
+   .sc-heading {
+     font-size: 34px;
+   }
+   .sc-image {
+     max-width: 130%;
+     position: absolute;
+     bottom: 0;
+     left: -15%;
+   }
+  }
+  @media (max-width: 699px) {
+   .sc-card {
+     overflow: visible;
+     text-align: center;
+   }
+   .sc-container {
+     padding: 10px;
+   }
+   .sc-card {
+     max-width: 90%;
+     margin: 0 auto;
+   }
+   .sc-card-text {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   .sc-card-image {
+     position: relative;
+     overflow: visible;
+     margin-top: 20px;
+     padding-right: 0;
+   }
+   .sc-image {
+     max-width: 80%;
+     position: relative;
+     bottom: -30px;
+     left: 0;
+   }
+   .sc-heading {
+     font-size: 34px;
+   }
+   .sc-paragraph {
+     text-align: center;
+   }
+   .sc-btn {
+     margin: 0 auto;
+   }
+  }
+  </style>
+  </head>
+  <body>
+  <div class="sc-container">
+  <div class="sc-card">
+  <div class="sc-card-content">
+  <div class="sc-card-text">
+  <h2 class="sc-heading">
+    <span>IN NEED OF</span>
+    <span>ONE OF OUR</span>
+    <span>SERVICES?</span>
+  </h2>
+  <p class="sc-paragraph">Our cost-effective creative ideas can be <br>
+    contacted for more information or a quote.<br>
+    Let’s collaborate on your project.</p>
+    <a href="get-quote.html">
+      <button class="sc-btn">GET STARTED</button>
+    </a>
+  </div>
+  <div class="sc-card-image">
+  <img class="sc-image" src="/assets/images/v1/laptopman.png" alt="Man with laptop">
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <!-- Footer  -->
+
+  <footer class="aximo-footer-section dark-bg2">
+    <div class="container">
+      <div class="aximo-footer-top aximo-section-padding">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="aximo-default-content light position-relative">
+              <h2>
+                <span class="aximo-title-animation">
+                  Let's start  your
+                  <span class="aximo-title-icon">
+                    <img src="assets/images/v1/star2.png" alt="">
+                  </span>
+                </span>
+                 project today
+              </h2>
+              <p>We’re Here to Help You Achieve Your Goals</p>
+              <div class="aximo-info-wrap">
+                <div class="aximo-info">
+                  <ul>
+                    <li>Give us a call:</li>
+                    <li><a href="">+1 (758) 726-6532</a></li>
+                  </ul>
+                </div>
+                <div class="aximo-info">
+                  <ul>
+                    <li>Send us an email:</li>
+                    <li><a href="">info@igraphixmarketingand.co</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="aximo-social-icon social-large">
+                <ul>
+                  <li>
+                    <a href="https://twitter.com/" target="_blank">
+                      <i class="icon-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://facebook.com/igraphixmarketingco/" target="_blank">
+                      <i class="icon-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/igraphixmktg.co/" target="_blank">
+                      <i class="icon-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/vernon-francis/" target="_blank">
+                      <i class="icon-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="aximo-hero-shape aximo-footer-shape">
+                <img src="assets/images/v1/shape1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="aximo-form-wrap">
+              <h4>Send us a message</h4>
+              <form id="form">
+                <div class="aximo-form-field">
+                    <input type="text" name="from_name" placeholder="Your Full name" required>
+                </div>
+                <div class="aximo-form-field">
+                    <input type="email" name="from_email" placeholder="Your email" required>
+                </div>
+                <div class="aximo-form-field">
+                    <input id="phone" type="tel" name="phone" placeholder="Your phone number" required>
+                </div>
+                <div class="aximo-form-field">
+                    <textarea name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button id="aximo-submit-btn" value="Send Email" type="submit">
+                    Send message 
+                    <span><img src="assets/images/icon/arrow-right3.svg" alt=""></span>
+                </button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <br>
+      <div class="aximo-footer-bottom">
+        <div class="row">
+       
+            <div class="aximo-copywright one">
+             <center><p> &copy; Copyright 2024, All Rights Reserved by Vernon Francis</p></center> 
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+  
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('uACt0kAdaJTkpA6Bb')
+  </script>
+
+  <script>
+    const phoneInput = document.getElementById('phone');
+  
+    phoneInput.addEventListener('input', function(event) {
+      let input = event.target.value.replace(/\D/g, ''); // Remove all non-digit characters
+      let formattedInput = '';
+  
+      if (input.length > 0) {
+        formattedInput += '(' + input.substring(0, 3); // Add the first 3 digits inside parentheses
+      }
+      if (input.length > 3) {
+        formattedInput += ') ' + input.substring(3, 6); // Add space and the next 3 digits
+      }
+      if (input.length > 6) {
+        formattedInput += '-' + input.substring(6, 10); // Add dash and the final 4 digits
+      }
+  
+      // Restrict input length to 10 digits (US format)
+      event.target.value = formattedInput;
+    });
+
+    if (input.length > 0) {
+  formattedInput += '+44 ' + input.substring(0, 4); // UK country code + first 4 digits
+}
+if (input.length > 4) {
+  formattedInput += ' ' + input.substring(4, 7); // Add space and next 3 digits
+}
+if (input.length > 7) {
+  formattedInput += ' ' + input.substring(7, 11); // Add space and final 4 digits
+}
+  </script>
+
+
+
+  <!-- scripts -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/menu/menu.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/skill-bar.js"></script>
+  <script src="assets/js/infinite-slider.js"></script>
+  <script src="assets/js/image-resizing.js"></script>
+  <!-- <script src="assets/js/scrollsmooth.js"></script> -->
+  <script src="assets/js/faq.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
+
+  <script src="assets/js/app.js"></script>
+
+
+</body>
+</html>

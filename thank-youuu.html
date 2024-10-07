@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You!!</title>
+
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!--- End favicon-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <!-- End google font  -->
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/custom-font.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/icomoon.css">
+
+
+  <!-- Code Editor  -->
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/app.min.css">
+
+
+<style>
+
+body {
+
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+        }
+
+
+    .go-back-btn {
+        margin-top: 40px;
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #06a9bb;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .go-back-btn:hover {
+        background-color: #0056b3;
+    }
+
+    /* Confetti */
+    .confetti {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+
+    .confetti-piece {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: #ff6347;
+        animation: confetti-fall 4s ease-out infinite;
+        opacity: 0;
+    }
+
+    @keyframes confetti-fall {
+        0% {
+            opacity: 1;
+            transform: translateY(0) rotate(0deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(800px) rotate(360deg);
+        }
+    }
+</style>
+
+</head>
+
+<body class="light">
+
+ 
+
+  <div class="aximo-preloader-wrap">
+    <div class="aximo-preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+
+  <header class="site-header aximo-header-section aximo-header3 dark-bg" id="sticky-menu">    
+    <div class="container">
+      <nav class="navbar site-navbar">
+        <!-- Brand Logo-->
+        <div class="brand-logo">
+          <a href="index.html">
+            <img src="assets/images/logo/logo2.png" alt="" class="light-version-logo">
+            
+          </a>
+        </div>
+  
+        <div class="menu-block-wrapper">
+          <div class="menu-overlay"></div>
+          <nav class="menu-block" id="append-menu-header">
+            <div class="mobile-menu-head">
+              <div class="go-back">
+                <i class="fa fa-angle-left"></i>
+              </div>
+              <div class="current-menu-title"></div>
+              <div class="mobile-menu-close">&times;</div>
+            </div>
+            <ul class="site-menu-main">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link-item">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="about-us.html" class="nav-link-item">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="portfolio.html" class="nav-link-item">Portfolio</a>
+              </li> 
+              <li class="nav-item">
+                <a href="our-services.html" class="nav-link-item">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact-us.html" class="nav-link-item">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+
+       
+
+        <!-- mobile menu trigger -->
+        <div class="mobile-menu-trigger light">
+          <span></span>
+        </div>
+        <!--/.Mobile Menu Hamburger Ends-->
+   
+        <div class="header-btn header-btn-l1 ms-auto d-xs-inline-flex">
+          <div class="aximo-header-wrap">
+            <div class="aximo-social-icon header-social">
+              <ul>
+               
+                <li>
+                  <a href="https://facebook.com/igraphixmarketingco/" target="_blank">
+                    <i class="icon-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/igraphixmarketingco/" target="_blank">
+                    <i class="icon-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/vernon-francis/" target="_blank">
+                    <i class="icon-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+             <div class="header-btn header-btn-l1 ms-auto d-xs-inline-flex">
+              <a class="aximo-default-btn pill aximo-header-btn" href="get-quote.html">
+                Get A Quote
+              </a>
+              <div id="get-started-bubble" class="bubble">
+                Get Started
+              </div>
+            </div>
+
+        
+      </nav>
+    </div>
+
+    <style>
+
+      /* Scroll progress bar container */
+      #progressContainer {
+          position: fixed;
+          right: 0;
+          top: 0;
+          width: 5px;
+          height: 100%;
+          background-color: #FDFDE1;
+          z-index: 9999;
+      }
+
+      /* Progress bar */
+      #progressBar {
+          width: 100%;
+          height: 0;
+          background-color: #06a9bb;
+      }
+
+      /* Sample content */
+      .content {
+          padding: 20px;
+          max-width: 800px;
+          margin: auto;
+      }
+  </style>
+  </header>
+  
+ <!-- Scroll progress bar -->
+ <div id="progressContainer">
+  <div id="progressBar"></div>
+</div>
+<script>
+  // Update the progress bar as the user scrolls
+  window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progressBar").style.height = scrolled + "%";
+  };
+</script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+<h1>Thank You</h1>
+<p>We have received your request, and we will get back to you as soon as possible with an estimation.</p>
+<button class="go-back-btn" id="go-back-btn" href="/index.html">Go Back</button>
+
+<script>
+    // JavaScript to handle the Go Back button
+    document.getElementById('go-back-btn').addEventListener('click', function() {
+        // Reload the previous page when the user clicks "Go Back"
+        window.history.go(-1);
+    });
+</script>
+
+    <div class="confetti" id="confetti-container"></div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        // Confetti Animation
+        function createConfetti() {
+            const confettiContainer = document.getElementById('confetti-container');
+            const confettiColors = ['#ff6347', '#32cd32', '#1e90ff', '#ff69b4', '#ffdd57'];
+
+            for (let i = 0; i < 100; i++) {
+                const confettiPiece = document.createElement('div');
+                confettiPiece.classList.add('confetti-piece');
+                confettiPiece.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+                confettiPiece.style.left = Math.random() * 100 + 'vw';
+                confettiPiece.style.animationDelay = Math.random() * 2 + 's';
+                confettiPiece.style.animationDuration = Math.random() * 3 + 2 + 's';
+                confettiContainer.appendChild(confettiPiece);
+            }
+
+            // Stop confetti after 5 seconds
+            setTimeout(() => {
+                confettiContainer.innerHTML = ''; // Remove all confetti pieces
+            }, 5000);
+        }
+
+        // Trigger confetti when page loads
+        window.onload = createConfetti;
+    </script>
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+  <!-- Footer  -->
+
+  <footer class="aximo-footer-section dark-bg2">
+    <div class="container">
+
+      <div class="aximo-footer-bottom">
+        <div class="row">
+       
+            <div class="aximo-copywright one">
+             <center><p> &copy; Copyright 2024, All Rights Reserved by Vernon Francis</p></center> 
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+  
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('uACt0kAdaJTkpA6Bb')
+  </script>
+
+  <script>
+    const phoneInput = document.getElementById('phone');
+  
+    phoneInput.addEventListener('input', function(event) {
+      let input = event.target.value.replace(/\D/g, ''); // Remove all non-digit characters
+      let formattedInput = '';
+  
+      if (input.length > 0) {
+        formattedInput += '(' + input.substring(0, 3); // Add the first 3 digits inside parentheses
+      }
+      if (input.length > 3) {
+        formattedInput += ') ' + input.substring(3, 6); // Add space and the next 3 digits
+      }
+      if (input.length > 6) {
+        formattedInput += '-' + input.substring(6, 10); // Add dash and the final 4 digits
+      }
+  
+      // Restrict input length to 10 digits (US format)
+      event.target.value = formattedInput;
+    });
+
+    if (input.length > 0) {
+  formattedInput += '+44 ' + input.substring(0, 4); // UK country code + first 4 digits
+}
+if (input.length > 4) {
+  formattedInput += ' ' + input.substring(4, 7); // Add space and next 3 digits
+}
+if (input.length > 7) {
+  formattedInput += ' ' + input.substring(7, 11); // Add space and final 4 digits
+}
+  </script>
+
+
+
+  <!-- scripts -->
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/menu/menu.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/SplitText.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/ScrollSmoother.min.js"></script>
+  <script src="assets/js/skill-bar.js"></script>
+  <script src="assets/js/infinite-slider.js"></script>
+  <script src="assets/js/image-resizing.js"></script>
+  <!-- <script src="assets/js/scrollsmooth.js"></script> -->
+  <script src="assets/js/faq.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyArZVfNvjnLNwJZlLJKuOiWHZ6vtQzzb1Y"></script>
+
+  <script src="assets/js/app.js"></script>
+
+
+</body>
+</html>
