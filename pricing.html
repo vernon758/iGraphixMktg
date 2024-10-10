@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact us for a personal experience today!">
+  <meta name="description" content="We work closely with our clients to know their objectives, target audience, unique needs, and practical design solutions.">
   <meta name="keywords" content="graphic design, photography, drone services, branding, logo design, web development, marketing materials, custom graphics, creative services, aerial photography, professional design, iGraphix Marketing & Co, igraphix marketing, igraphix, graphic designer near me, photography near me">    
   <meta name="author" content="Vernon Francis">
-  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing</title>
 
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
   <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
@@ -33,9 +33,16 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/app.min.css">
 
+<!--  form  -->
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init('uACt0kAdaJTkpA6Bb')
+</script>
+
 
 </head>
-
 
 
 
@@ -50,7 +57,6 @@
       <div></div>
     </div>
   </div>
-
 
   <header class="site-header aximo-header-section aximo-header3 dark-bg2" id="sticky-menu">    
     <div class="nav-container">
@@ -254,7 +260,6 @@ function displayMessage() {
   </script>
 
 
-
     <style>
 
       /* Scroll progress bar container */
@@ -299,13 +304,21 @@ function displayMessage() {
 </script>
 
 
+
+
+
+
+<!---------------------------------------------------------------------Pricing------------------------------------------------------------------->
+
+
+
 <div class="aximo-breadcrumb dark-bg2">
     <div class="container"><br>
-      <h1 class="post__title">Contact Us</h1>
+      <h1 class="post__title">Pricing</h1>
       <nav class="breadcrumbs">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li aria-current="page"> Contact Us</li>
+          <li aria-current="page"> Pricing Plans</li>
         </ul>
       </nav>
 
@@ -313,233 +326,460 @@ function displayMessage() {
   </div>
   <!-- End breadcrumb -->
 
-
-
-
-
-
-
-
-
-
-  <div class="section aximo-section-padding">
+  <div class="section aximo-section-padding3">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-8">
-          <div class="aximo-section-title">
-            <h2>
-              <span class="aximo-title-animation">
-              Contact us for a
-              <span class="aximo-title-icon">
-                <img src="assets/images/v1/star2.png" alt="">
-              </span>
-              </span>
-              personal experience
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-5 order-lg-2">
-          <div class="aximo-contact-thumb wow fadeInRight" data-wow-delay="0.1s">
-            <img src="assets/images/contact/contact-thumb.jpeg" alt="">
-          </div>
-        </div>
-        <div class="col-lg-7">
-          <div class="aximo-main-form">
-          <form id="form">
-                <div class="aximo-form-field">
-                    <label>Full Name</label>
-                    <input type="text" name="from_name" placeholder="Vernon Francis" required>
-                </div>
-                <div class="aximo-form-field">
-                    <label>Email</label>
-                    <input type="email" name="from_email" placeholder="email@example.com" required>
-                </div>
-                <div class="aximo-form-field">
-                    <label>Phone</label>
-                    <input id="phone" type="tel" name="phone" placeholder="(758) 726-6532" required>
-                </div>
-                <div class="aximo-form-field">
-                    <label>Message</label>
-                    <textarea name="message" placeholder="Write your message here..." required></textarea>
-                </div>
-                <button id="aximo-submit-btn" value="Send Email" type="submit">
-                    Send message 
-                    <span><img src="assets/images/icon/arrow-right3.svg" alt=""></span>
-                </button>
-            </form>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <!-- End section -->
-
-
-
-  <br>
-  <div class="aximo-contact-info-section">
-    <div class="container">
-      <div class="aximo-contact-info-title">
+      <div class="aximo-pricing-title">
         <h2>
+          Pick from one of our
           <span class="aximo-title-animation">
-          Contact Information
+          ready packages
           <span class="aximo-title-icon">
             <img src="assets/images/v1/star2.png" alt="">
           </span>
           </span>
         </h2>
       </div>
-      <div class="row">
+      
+      <div class="row" id="table-price-value" data-pricing-dynamic data-value-active="monthly">
         <div class="col-xl-4 col-md-6">
-          <a href="">
-            <div class="aximo-contact-info-box wow fadeInUpX dark-bg2" data-wow-delay="0.1s">
-              <div class="aximo-contact-info-icon">
-                <img src="assets/images/icon/call2.svg" alt="">
-              </div>
-              <div class="aximo-contact-info-data">
-                <span>Call us</span>
-                <p>+1 (758)-726-6532</p>
-                <p>+1 (758)-484-6768</p>
-              </div>
+          <div class="aximo-pricing-wrap2 wow fadeInUpX" data-wow-delay="0.1s">
+            <div class="aximo-pricing-header2">
+              <h5>Quick Start Website</h5>
             </div>
-          </a>
+            <div class="aximo-pricing-price2">
+              <h2 class="aximo-price dynamic-value">$599</h2>
+            </div>
+            <div class="aximo-pricing-description">
+              <p>Get online fast and easy!</p>
+            </div>
+            <div class="aximo-pricing-body2">
+              <ul>
+                <li><img src="assets/images/icon/check.svg" alt="">You supply the design files (Figma, Sketch, Photoshop, or even photos – no copyrighted content)</li>
+                <li><img src="assets/images/icon/check.svg" alt="">We bring your vision to life with clean HTML, CSS, and JavaScript</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Mobile-ready for flawless viewing on any screen size</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Affordable add-on pages available if needed</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Launch-ready in record time!</li>
+              </ul>
+            </div>
+            <a class="aximo-pricing-btn2" href="coming-soon.html">Select the package</a>
+          </div>
         </div>
         <div class="col-xl-4 col-md-6">
-          <a href="">
-            <div class="aximo-contact-info-box wow fadeInUpX dark-bg2" data-wow-delay="0.2s">
-              <div class="aximo-contact-info-icon">
-                <img src="assets/images/icon/email.svg" alt="">
-              </div>
-              <div class="aximo-contact-info-data">
-                <span>Email us</span>
-                <p>info@igraphixmarketingand.co</p>
-                <p>igraphixmarketingco@gmail.com</p>
-              </div>
+          <div class="aximo-pricing-wrap2 wow fadeInUpX" data-wow-delay="0.2s">
+            <div class="aximo-pricing-header2">
+              <h5>Essential Web Package</h5>
             </div>
-          </a>
+            <div class="aximo-pricing-price2">
+              <h2 class="aximo-price dynamic-value">$1499</h2>
+            </div>
+            <div class="aximo-pricing-description">
+              <p>Built to grow your brand!</p>
+            </div>
+            <div class="aximo-pricing-body2">
+              <ul>
+                <li><img src="assets/images/icon/check.svg" alt="">Custom-designed website with up to 7 pages</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Static, fast-loading HTML layout</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Bespoke designs to match your company’s style and needs</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Fully responsive, works seamlessly on desktops, tablets, and phones</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Basic SEO included to help you rank higher on search engines</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Simple contact form for inquiries</li>
+                <li><img src="assets/images/icon/not.svg" alt="" style="top: 8%; left: 3%;">No built-in eCommerce – perfect for non-sales-driven sites!</li>
+              </ul>
+            </div>
+            <a class="aximo-pricing-btn2 active" href="coming-soon.html">Select the package</a>
+          </div>
         </div>
+
         <div class="col-xl-4 col-md-6">
-          <div class="aximo-contact-info-box wow fadeInUpX dark-bg2" data-wow-delay="0.3s">
-            <div class="aximo-contact-info-icon">
-              <img src="assets/images/icon/map.svg" alt="">
+          <div class="aximo-pricing-wrap2 wow fadeInUpX" data-wow-delay="0.3s">
+            <div class="aximo-pricing-header2">
+              <h5>eCommerce Essentials</h5>
             </div>
-            <div class="aximo-contact-info-data">
-              <span>Location</span>
-              <p>Morne Dudon RD, Castries, St. Lucia</p>
+            <div class="aximo-pricing-price2">
+              <h2 class="aximo-price dynamic-value">$2499</h2> 
             </div>
+            <div class="aximo-pricing-description">
+              <p>Sell online, grow everywhere!</p>
+            </div>
+            <div class="aximo-pricing-body2">
+              <ul>
+                <li><img src="assets/images/icon/check.svg" alt="">Up to 10 custom-designed pages, including product listings</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Seamless mobile and desktop compatibility for shopping on the go</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Fully integrated online store with secure checkout</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Account creation for customers to track orders and manage profiles</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Optimized shopping cart and checkout process</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Easy-to-use product management (add, edit, and organize your products)</li>
+                <li><img src="assets/images/icon/check.svg" alt="">Basic SEO optimization to drive traffic to your store</li>
+                <li><img src="assets/images/icon/not.svg" alt="" style="top: 8%; left: 3%;">Advanced features like memberships, subscriptions, or multi-vendor options available as upgrades</li>
+              </ul>
+            </div>
+            <a class="aximo-pricing-btn2" href="coming-soon.html">Select the package</a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- end section -->
-  <div class="section">
-    <div class="container">
-      <div class="aximo-map-wrap">
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d446.8182578097833!2d-60.98594319479944!3d14.009433633239853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x58c13da0f089ae1%3A0x3cdb4ad099bddb75!2siGraphix%20Marketing%20%26%20Co.!5e0!3m2!1sen!2sus!4v1727056620979!5m2!1sen!2sus" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!---------------------------------------------------------------------Pricing end section------------------------------------------------------------------->
+
+
+  <div class="aximo-auto-slider-section">
+    <div class="swiper aximo-auto-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="aximo-auto-slider-item">
+            <h3>Let's create new experiences</h3>
+            <img src="assets/images/v1/star3.png" alt="">
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- end section -->
+  <!-- End section -->
 
-  <div class="section aximo-section-padding">
+  <div class="section">
+    <div class="container">
+      <div class="aximo-pricing-border">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="aximo-default-content">
+              <h2>
+                <span class="aximo-title-animation">
+                Read our FAQ
+                <span class="aximo-title-icon">
+                  <img src="assets/images/v1/star2.png" alt="">
+                </span>
+                </span>
+                for clarification
+              </h2>
+              <p>We understand that you considering our services, that's why we’ve curated a collection of frequently asked questions.</p>
+            </div>
+            <a class="aximo-errors-btn contact-us wow fadeInUpX" data-wow-delay="0.1s" href="contact-us.html">Contact us <span><img src="assets/images/icon/arrow-right.svg" alt=""></span></a>
+
+
+         
+          </div>
+
+
+
+          <div class="col-lg-6">
+            <div class="aximo-accordion-normal-wrap m_top_responsive">
+              <div class="aximo-accordion-normal-item">
+               
+               
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt="">
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>How long will it take to build my website?</h3>
+                  <p>The timeline depends on the package and complexity of the project. Typically, the Starter Web Build can be completed in as little as 5-7 days. For the Business Boost and eCommerce Essentials, expect a turnaround time of 2-4 weeks. We’ll give you a clear timeline after reviewing your project.</p>
+                </div>
+              </div>
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt="">
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>What is included in website maintenance?</h3>
+                  <p>Website maintenance covers updates, bug fixes, content changes, and overall performance checks. We offer ongoing support services at an additional cost to ensure your website stays up-to-date and functions smoothly.</p>
+                </div>
+              </div> 
+         
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt="">
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>How do I get started?</h3>
+                  <p>To begin, simply reach out to discuss your project requirements. A 50% deposit is required upfront to start the design and development process. The remaining balance is paid upon project completion.</p>
+                </div>
+              </div>
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt="">
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>Do I need to pay for the domain separately?</h3>
+                  <p>Yes, domain registration is a separate cost. If you don’t already have a domain, we can assist you in selecting and purchasing one through a domain provider.</p>
+                </div>
+              </div>
+
+              <div class="aximo-accordion-normal-item">
+                <div class="aximo-accordion-normal-icon">
+                  <img src="assets/images/icon/question.svg" alt="">
+                </div>
+                <div class="aximo-accordion-normal-data">
+                  <h3>Are there any subscriptions after the website is finished?</h3>
+                  <p>For eCommerce websites, there are typically ongoing costs like hosting fees, payment gateway fees, and maintenance services. With the Essential Web Package, maintenance is optional, but there may be hosting and basic upkeep costs depending on your needs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!-- ENd section -->
+
+
+
+
+
+
+  <div class="section aximo-section-padding3">
     <div class="container">
       <div class="aximo-section-title center">
         <h2>
-          These FAQs help
+          Clients are always
           <span class="aximo-title-animation">
-          clients learn about us
-          <span class="aximo-title-icon">
-            <img src="assets/images/v1/star2.png" alt="">
-          </span>
+            satisfied with us
+            <span class="aximo-title-icon">
+              <img src="assets/images/v1/star2.png" alt="">
+            </span>
           </span>
         </h2>
       </div>
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="aximo-accordion-normal-wrap responsive-margin">
-            <div class="aximo-accordion-normal-item">
-              <div class="aximo-accordion-normal-icon">
-                <img src="assets/images/icon/question.svg" alt="">
-              </div>
-              <div class="aximo-accordion-normal-data">
-                <h3>What services does the agency offer?</h3>
-                <p>Our agency provides services, such as graphic design, web design, photography, drone services & SM Management.</p>
-              </div>
+      <style>
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+    
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+    
+        .carousel-card {
+            min-width: calc(100% / 2); /* Show 3 cards at a time */
+            padding: 10px;
+        }
+    
+        .card {
+            position: relative; /* Make the card the reference for absolute positioning */
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 350px; /* Fixed height for all cards */
+            text-align: center;
+        }
+    
+        .card img.logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 40px; /* Adjust size as needed */
+            height: auto;
+        }
+    
+        .card h5 {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    
+        .card p {
+            flex-grow: 1; /* Ensures text takes up space */
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+    
+        .star-rating {
+            color: #ffcc00;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+    
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+    
+        .control {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1.5rem;
+            transition: background-color 0.3s;
+        }
+    
+        .control:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    
+        .control-left {
+            left: 0;
+        }
+    
+        .control-right {
+            right: 0;
+        }
+    
+        @media (max-width: 768px) {
+            .carousel-card {
+                min-width: calc(100% / 1); /* Show 2 cards at a time */
+            }
+        }
+    </style>
+    
+    <div class="carousel">
+        <div class="carousel-track">
+            <div class="carousel-card">
+                <div class="card">
+                  <br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>Khadisha Fergus</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>"I highly recommend iGraphix to anyone in need of logo design and other creative services. They did an exceptional job on my price list, and I couldn't be more satisfied with the results."</p>
+                </div>
             </div>
-            <div class="aximo-accordion-normal-item">
-              <div class="aximo-accordion-normal-icon">
-                <img src="assets/images/icon/question.svg" alt="">
-              </div>
-              <div class="aximo-accordion-normal-data">
-                <h3>How can I get a quote for your services?</h3>
-                <p>To receive a personalized quote, simply fill out our online form with details about your project and service requirements. Once submitted, we’ll review your information and get back to you with a tailored estimate.</p>
-     
-              </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>Kisinger Francis</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>"Logo design is fantastic, really captures what I wanted!"</p>
+                </div>
             </div>
-            <div class="aximo-accordion-normal-item">
-              <div class="aximo-accordion-normal-icon">
-                <img src="assets/images/icon/question.svg" alt="">
-              </div>
-              <div class="aximo-accordion-normal-data">
-                <h3>How much does design work cost?</h3>
-                <p>The cost of our design services varies depending on the scope of the project. We provide customized quotes after discussing requirements.</p>
-              </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>nevaeh styles758</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>(No Comment)</p>
+                </div>
             </div>
-
-          </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>rich nigga gaming</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>(No Comment)</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>Antonia Antonia</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>(No Comment)</p>
+                </div>
+            </div>
+            <div class="carousel-card">
+                <div class="card"><br>
+                    <img src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="Google Logo" class="logo">
+                    <h5>Taye Jules</h5>
+                    <div class="star-rating">★★★★★</div>
+                    <p>(No Comment)</p>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-6">
-          <div class="aximo-accordion-normal-wrap">
-            <div class="aximo-accordion-normal-item">
-              <div class="aximo-accordion-normal-icon">
-                <img src="assets/images/icon/question.svg" alt="">
-              </div>
-              <div class="aximo-accordion-normal-data">
-                <h3>What's your design process like?</h3>
-                <p>Our design process typically involves discovery, concept development, design, revisions based on feedback, and finalization.</p>
-              </div>
-            </div>
-            <div class="aximo-accordion-normal-item">
-              <div class="aximo-accordion-normal-icon">
-                <img src="assets/images/icon/question.svg" alt="">
-              </div>
-              <div class="aximo-accordion-normal-data">
-                <h3>How do you handle user feedback?</h3>
-                <p>We value client feedback and work closely with you to make sure user happy with the final design. We offer a specific number of revisions.</p>
-              </div>
-            </div>
-            <div class="aximo-accordion-normal-item">
-              <div class="aximo-accordion-normal-icon">
-                <img src="assets/images/icon/question.svg" alt="">
-              </div>
-              <div class="aximo-accordion-normal-data">
-                <h3>Can we see samples of your work?</h3>
-                <p>Yes, we're proud to showcase a portfolio of our previous projects. You can find examples of our work on our website or view our portfolio.</p>
-              </div>
-            </div>
-          </div>
+    
+        <!-- Carousel Controls -->
+        <div class="carousel-controls">
+            <button class="control control-left" onclick="moveLeft()">&#10094;</button>
+            <button class="control control-right" onclick="moveRight()">&#10095;</button>
         </div>
-      </div>
     </div>
-  </div>
-  <!-- End section -->
-  <br><br>
+
+  </section></div></div>
+
+    <script>
+        const track = document.querySelector('.carousel-track');
+        const cards = document.querySelectorAll('.carousel-card');
+        const cardWidth = cards[0].offsetWidth;
+        let currentIndex = 0;
+
+        function moveLeft() {
+            if (currentIndex === 0) {
+                currentIndex = cards.length - 3;
+            } else {
+                currentIndex--;
+            }
+            updateCarousel();
+        }
+
+        function moveRight() {
+            if (currentIndex >= cards.length - 3) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            const newPosition = -currentIndex * cardWidth;
+            track.style.transform = `translateX(${newPosition}px)`;
+        }
+
+        // Auto-slide every 3 seconds
+        setInterval(() => {
+            moveRight();
+        }, 3000);
+    </script>
 
 
 
 
-
-
-
-
-  <style>
+<style>
 
     .sc-container {
      max-width: 1300px;
@@ -695,9 +935,8 @@ function displayMessage() {
      }
     }
     </style>
-
-
-
+    
+  
     <body>
     <div class="sc-container">
     <div class="sc-card">
@@ -722,13 +961,6 @@ function displayMessage() {
     </div>
     </div>
   
-
-
-
-
-
-
-
 
   <!-- Footer  -->
 
